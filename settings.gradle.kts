@@ -20,5 +20,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "Osho Music Player"
+rootProject.name = "Sannyas"
 include(":app")

@@ -1,10 +1,10 @@
-# Osho Music Player
+# Sannyas
 
 A premium Android audio player for Osho's recorded discourses. Fully offline-capable,
 no backend, no accounts — the catalog ships inside the app and audio is streamed
 on demand from [oshoworld.com](https://oshoworld.com), where it is offered freely.
 
-**173 discourse series · 2,819 talks · ~3,900 hours of audio.**
+**351 discourse series · 5,518 talks · ~8,257 hours of audio.**
 
 ---
 
@@ -190,6 +190,12 @@ defined in terms of it. Instructions are in the KDoc there.
 
 ## Attribution
 
-This is an independent player and is not affiliated with OshoWorld. Audio is
-streamed directly from the source rather than rehosted, and no discourse text is
+Sannyas is an independent player. It is not affiliated with, endorsed by, or
+connected to OshoWorld or Osho International Foundation. Audio is streamed
+directly from the source rather than rehosted, and no discourse text is
 redistributed.
+
+"Sannyas" is a generic Sanskrit term, deliberately chosen so the product name
+carries no third-party mark. References to Osho in the app and store listing are
+descriptive — they identify whose discourses these are — and are not a claim of
+affiliation.

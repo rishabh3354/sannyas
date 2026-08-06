@@ -304,8 +304,8 @@
     <string name="settings_developer_name">ऋषभ भारद्वाज</string>
     <string name="settings_developer_site">warlordsoftwares.com</string>
     <string name="settings_about_app">इस ऐप के बारे में</string>
-    <string name="settings_about_body">संस्करण %1$s\n\nओशो के रिकॉर्ड किए प्रवचनों का प्लेयर। सूची ऐप के साथ ही आती है; ऑडियो oshoworld.com से माँग पर स्ट्रीम होता है, जहाँ वह निःशुल्क उपलब्ध है।\n\nJetpack Compose और Media3 से बना।</string>
-    <string name="settings_footer">ऑडियो oshoworld.com से स्ट्रीम होता है। यह एक स्वतंत्र प्लेयर है और स्रोत से संबद्ध नहीं है।</string>
+    <string name="settings_about_body">संस्करण %1$s\n\nसंन्यास ओशो के रिकॉर्ड किए प्रवचनों का प्लेयर है। सूची ऐप के साथ ही आती है; ऑडियो oshoworld.com से माँग पर स्ट्रीम होता है, जहाँ वह निःशुल्क उपलब्ध है।\n\nJetpack Compose और Media3 से बना।</string>
+    <string name="settings_footer">संन्यास एक स्वतंत्र प्लेयर है। यह oshoworld.com या Osho International Foundation से संबद्ध, अनुमोदित या संबंधित नहीं है। ऑडियो oshoworld.com से स्ट्रीम होता है।</string>
     <string name="settings_cache_cleared">कैश साफ़ हो गया</string>
     <string name="settings_history_cleared">सुनने का इतिहास साफ़ हो गया</string>
 
