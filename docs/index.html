@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Sannyas — Osho Discourses App for Android | Free Osho Audio in Hindi &amp; English</title>
+<meta name="description" content="Free Android app to listen to Osho's recorded discourses — 351 series, 5,518 talks, 8,257 hours in Hindi and English. Stream or download for offline listening. No account, no ads, no tracking.">
+<link rel="canonical" href="https://rishabh3354.github.io/sannyas/">
+<meta name="theme-color" content="#4B2FBF">
+<link rel="icon" href="img/icon.png">
+<link rel="apple-touch-icon" href="img/icon.png">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Sannyas">
+<meta property="og:title" content="Sannyas — Osho Discourses App for Android">
+<meta property="og:description" content="351 series · 5,518 talks · 8,257 hours of Osho's discourses in Hindi and English. Stream or download offline. Free, no account, no ads.">
+<meta property="og:url" content="https://rishabh3354.github.io/sannyas/">
+<meta property="og:image" content="https://rishabh3354.github.io/sannyas/img/og-cover.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="en_IN">
+<meta property="og:locale:alternate" content="hi_IN">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Sannyas — Osho Discourses App for Android">
+<meta name="twitter:description" content="351 series · 5,518 talks · 8,257 hours of Osho's discourses in Hindi and English. Free, offline, no ads.">
+<meta name="twitter:image" content="https://rishabh3354.github.io/sannyas/img/og-cover.png">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Sannyas",
+  "alternateName": "Sannyas — Osho Discourses Player",
+  "applicationCategory": "MultimediaApplication",
+  "applicationSubCategory": "Audio Player",
+  "operatingSystem": "Android 7.0+",
+  "description": "Android app for listening to Osho's recorded discourses in Hindi and English. 351 series, 5,518 talks, about 8,257 hours. Stream or download for offline listening. No account, no ads, no tracking.",
+  "url": "https://rishabh3354.github.io/sannyas/",
+  "downloadUrl": "https://github.com/rishabh3354/sannyas/releases/latest",
+  "installUrl": "https://github.com/rishabh3354/sannyas/releases/latest",
+  "softwareVersion": "1.0.0",
+  "fileSize": "4.4MB",
+  "inLanguage": ["en", "hi"],
+  "isAccessibleForFree": true,
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+  "author": { "@type": "Person", "name": "Rishabh Bhardwaj", "url": "https://warlordsoftwares.com" },
+  "privacyPolicy": "https://rishabh3354.github.io/sannyas/privacy-policy.html"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    { "@type": "Question", "name": "Is the Sannyas app free?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes. It is completely free, has no ads, no subscription and no in-app purchases." } },
+    { "@type": "Question", "name": "Can I listen to Osho discourses offline?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes. Any talk or full series can be downloaded for offline listening, and downloads continue in the background." } },
+    { "@type": "Question", "name": "Are Hindi discourses available?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes. Both Hindi and English discourses are included — 176 Hindi series and 175 English series — and you can switch between them at any time." } },
+    { "@type": "Question", "name": "Do I need an account to use it?",
+      "acceptedAnswer": { "@type": "Answer", "text": "No. There is no sign-up, no login and no account of any kind. Nothing about your listening is collected or sent anywhere." } },
+    { "@type": "Question", "name": "Where does the audio come from?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Audio is streamed directly from oshoworld.com, where it is offered freely. The app does not rehost it." } }
+  ]
+}
+</script>
+
+<style>
+  :root{color-scheme:light dark;--bg:#fff;--fg:#16161d;--muted:#5b5b6b;--line:#e6e6ef;--accent:#5B34E8;--card:#faf9ff}
+  @media (prefers-color-scheme:dark){:root{--bg:#0f0f14;--fg:#eceaf6;--muted:#a3a0b8;--line:#26263a;--accent:#a48bff;--card:#17172180}}
+  *{box-sizing:border-box}
+  body{margin:0;font:400 17px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Noto Sans",sans-serif;color:var(--fg);background:var(--bg)}
+  .wrap{max-width:60rem;margin:0 auto;padding:0 1.25rem}
+  header{text-align:center;padding:3rem 0 1rem}
+  header img.banner{width:100%;max-width:44rem;height:auto;border-radius:18px}
+  h1{font-size:2.1rem;letter-spacing:-.02em;margin:1.75rem 0 .4rem}
+  .tag{color:var(--muted);font-size:1.1rem;margin:0 0 1.75rem}
+  .cta{display:inline-block;background:var(--accent);color:#fff;text-decoration:none;font-weight:600;
+       padding:.9rem 2rem;border-radius:999px;font-size:1.05rem}
+  .cta:hover{filter:brightness(1.1)}
+  .sub{color:var(--muted);font-size:.9rem;margin-top:.75rem}
+  h2{font-size:1.45rem;letter-spacing:-.01em;margin:3.25rem 0 1rem}
+  h3{font-size:1.05rem;margin:1.75rem 0 .35rem}
+  .shots{display:flex;gap:.85rem;overflow-x:auto;padding:.5rem 0 1rem;scroll-snap-type:x mandatory}
+  .shots img{width:200px;flex:0 0 auto;border-radius:14px;border:1px solid var(--line);scroll-snap-align:center}
+  .grid{display:grid;gap:1.25rem;grid-template-columns:repeat(auto-fit,minmax(15rem,1fr))}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:1.1rem 1.25rem}
+  .card h3{margin-top:0}
+  .card p{margin:.3rem 0 0;color:var(--muted);font-size:.95rem}
+  .stats{display:flex;flex-wrap:wrap;gap:1.5rem;justify-content:center;margin:2rem 0;padding:1.25rem;
+         border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+  .stat b{display:block;font-size:1.5rem;letter-spacing:-.02em}
+  .stat span{color:var(--muted);font-size:.85rem}
+  details{border-bottom:1px solid var(--line);padding:.9rem 0}
+  summary{cursor:pointer;font-weight:600}
+  details p{color:var(--muted);margin:.6rem 0 0}
+  a{color:var(--accent)}
+  footer{margin:4rem 0 3rem;padding-top:1.5rem;border-top:1px solid var(--line);color:var(--muted);font-size:.9rem}
+  [lang="hi"]{line-height:1.8}
+</style>
+</head>
+<body>
+
+<div class="wrap">
+
+<header>
+  <img class="banner" src="img/banner.png" alt="Sannyas — an Android app for listening to Osho's recorded discourses">
+  <h1>Listen to Osho's discourses on Android</h1>
+  <p class="tag">Free. Offline. In Hindi and English.<br>No account, no ads, no tracking.</p>
+  <a class="cta" href="https://github.com/rishabh3354/sannyas/releases/latest">Download the app</a>
+  <p class="sub">Free APK · 4.4&nbsp;MB · Android 7.0 and up</p>
+</header>
+
+<div class="stats">
+  <div class="stat"><b>351</b><span>discourse series</span></div>
+  <div class="stat"><b>5,518</b><span>talks</span></div>
+  <div class="stat"><b>8,257</b><span>hours of audio</span></div>
+  <div class="stat"><b>2</b><span>languages</span></div>
+</div>
+
+<h2>What Sannyas is</h2>
+<p>
+  Sannyas is a free Android audio player built for one thing: listening to
+  Osho's recorded discourses without anything getting in the way. There is no
+  sign-up, no subscription, no advertising, and no tracking of any kind.
+</p>
+<p>
+  The full catalogue of Osho pravachan — 351 series across Zen, Buddha, Krishna,
+  Sufism, Tao, Kabir, Yoga and 48 other categories — is browsable the moment you
+  open the app. Talks run over an hour each, so it is built around the things
+  that actually matter at that length: a sleep timer, playback speed, resume
+  where you left off, and offline downloads.
+</p>
+
+<div class="shots">
+  <img src="img/01-home.png" alt="Sannyas home screen showing Osho discourse series" loading="lazy">
+  <img src="img/02-series.png" alt="Osho discourse series with the full list of talks" loading="lazy">
+  <img src="img/03-player.png" alt="Now playing screen for an Osho discourse" loading="lazy">
+  <img src="img/04-browse.png" alt="Browsing Osho discourses by category" loading="lazy">
+</div>
+
+<h2>Features</h2>
+<div class="grid">
+  <div class="card"><h3>Offline listening</h3>
+    <p>Download any talk or a whole series. Downloads keep going in the background and survive a reboot.</p></div>
+  <div class="card"><h3>Hindi and English</h3>
+    <p>176 Hindi series and 175 English series. Switch the browsing language whenever you like.</p></div>
+  <div class="card"><h3>Sleep timer</h3>
+    <p>Set a duration, or let it stop at the end of the current talk. Made for listening at night.</p></div>
+  <div class="card"><h3>Background playback</h3>
+    <p>Keeps playing with the screen off, with lock-screen and notification controls.</p></div>
+  <div class="card"><h3>Picks up where you left off</h3>
+    <p>Every talk remembers its position, across restarts.</p></div>
+  <div class="card"><h3>Android Auto</h3>
+    <p>Browse and play the whole catalogue from the car screen, or ask your assistant.</p></div>
+  <div class="card"><h3>Speed and skip silence</h3>
+    <p>Adjust playback speed and skip long pauses — useful across 8,000 hours of talks.</p></div>
+  <div class="card"><h3>Favourites and playlists</h3>
+    <p>Save talks, build playlists, set bookmarks, and see your listening history.</p></div>
+</div>
+
+<h2 lang="hi">ओशो प्रवचन — हिन्दी में</h2>
+<p lang="hi">
+  सन्न्यास एक निःशुल्क एंड्रॉइड ऐप है, जिसमें ओशो के रिकॉर्ड किए गए प्रवचन
+  हिन्दी और अंग्रेज़ी दोनों में सुने जा सकते हैं। 176 हिन्दी शृंखलाएँ — ताओ
+  उपनिषद, कृष्ण, प्रश्नोत्तर, एस धम्मो सनंतनो और कई अन्य।
+</p>
+<p lang="hi">
+  कोई खाता नहीं, कोई विज्ञापन नहीं, कोई शुल्क नहीं। प्रवचन डाउनलोड करके बिना
+  इंटरनेट के भी सुने जा सकते हैं। स्लीप टाइमर, प्लेबैक स्पीड और जहाँ छोड़ा था
+  वहीं से सुनना — सब उपलब्ध है।
+</p>
+
+<h2>Install</h2>
+<p>
+  Download <strong>sannyas-1.0.0.apk</strong> from the
+  <a href="https://github.com/rishabh3354/sannyas/releases/latest">latest release</a>
+  and open it on your phone. Android will ask you to allow installs from
+  whichever app you opened it with — that is the normal one-time prompt for
+  installing outside the Play Store. Requires Android 7.0 or newer.
+</p>
+
+<h2>Questions</h2>
+<details><summary>Is it really free?</summary>
+  <p>Yes — no ads, no subscription, no in-app purchases, and no paid tier.</p></details>
+<details><summary>Can I listen without an internet connection?</summary>
+  <p>Yes. Download individual talks or entire series and they play with no connection at all.</p></details>
+<details><summary>Are Hindi discourses included?</summary>
+  <p>Yes — 176 Hindi series alongside 175 English ones, switchable at any time from Settings.</p></details>
+<details><summary>Do I need to create an account?</summary>
+  <p>No. There is no sign-up and no login. The app has no server of its own and collects nothing about you.</p></details>
+<details><summary>Where does the audio come from?</summary>
+  <p>Streamed directly from <a href="https://oshoworld.com">oshoworld.com</a>, where it is offered freely. The app does not rehost it.</p></details>
+<details><summary>Is it on the Play Store?</summary>
+  <p>Not yet. For now it installs directly from the APK linked above.</p></details>
+
+<h2>Privacy</h2>
+<p>
+  Nothing is collected. No server, no account, no analytics, no advertising code.
+  Favourites, history and settings stay on your device and are gone when you
+  uninstall. Read the
+  <a href="privacy-policy.html">full privacy policy</a>.
+</p>
+
+<footer>
+  <p>
+    <a href="https://github.com/rishabh3354/sannyas">Source on GitHub</a> ·
+    <a href="privacy-policy.html">Privacy</a> ·
+    <a href="https://warlordsoftwares.com">Rishabh Bhardwaj</a>
+  </p>
+  <p>
+    Sannyas is an independent player. It is not affiliated with, endorsed by, or
+    connected to oshoworld.com or Osho International Foundation. Audio is
+    streamed directly from the source rather than rehosted, and no discourse
+    text is redistributed.
+  </p>
+</footer>
+
+</div>
+</body>
+</html>

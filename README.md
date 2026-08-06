@@ -9,6 +9,7 @@
 <br>
 
 [![Download APK](https://img.shields.io/github/v/release/rishabh3354/sannyas?style=for-the-badge&label=Download%20APK&color=6C4DF6)](https://github.com/rishabh3354/sannyas/releases/latest)
+[![Website](https://img.shields.io/badge/Website-sannyas-1f1f2e?style=for-the-badge)](https://rishabh3354.github.io/sannyas/)
 
 ![Android 7.0+](https://img.shields.io/badge/Android-7.0%2B-3DDC84?style=flat-square&logo=android&logoColor=white)
 ![Kotlin](https://img.shields.io/badge/Kotlin-2.0-7F52FF?style=flat-square&logo=kotlin&logoColor=white)
@@ -33,6 +34,24 @@
 </table>
 
 </div>
+
+---
+
+## What it is
+
+Sannyas is a free Android audio player for **Osho's recorded discourses** — the
+full catalogue of Osho pravachan, in both Hindi and English, browsable the moment
+you open the app. Zen, Buddha, Krishna, Sufism, Tao, Kabir, Yoga and 48 other
+categories.
+
+Talks run over an hour each, so it is built around what matters at that length:
+a sleep timer, playback speed, offline downloads, and resuming exactly where you
+stopped.
+
+> **ओशो प्रवचन** — सन्न्यास एक निःशुल्क एंड्रॉइड ऐप है, जिसमें ओशो के प्रवचन
+> हिन्दी और अंग्रेज़ी दोनों में सुने जा सकते हैं। 176 हिन्दी शृंखलाएँ — ताओ उपनिषद,
+> कृष्ण, प्रश्नोत्तर, एस धम्मो सनंतनो और अन्य। कोई खाता नहीं, कोई विज्ञापन नहीं।
+> प्रवचन डाउनलोड करके बिना इंटरनेट के भी सुनें।
 
 ---
 
