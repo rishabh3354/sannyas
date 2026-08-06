@@ -1,14 +1,10 @@
 <div align="center">
 
-<img src="branding/play-store-icon-512.png" width="112" alt="Sannyas icon">
+<img src="branding/play-feature-graphic-1024x500.png" width="100%" alt="Sannyas — a player for Osho's recorded discourses. 351 series, 5,518 talks, 8,257 hours.">
 
 # Sannyas
 
-**A player for Osho's recorded discourses.**
-
-No account. No ads. No tracking. Just listening.
-
-**351 series · 5,518 talks · ~8,257 hours · English & हिन्दी**
+**No account. No ads. No tracking. Just listening — in English and हिन्दी.**
 
 <br>
 
