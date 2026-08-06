@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Osho Music Player</string>
+
+    <!-- Navigation -->
+    <string name="nav_home">Home</string>
+    <string name="nav_radio">Radio</string>
+    <string name="nav_search">Search</string>
+    <string name="nav_library">Library</string>
+    <string name="nav_settings">Settings</string>
+
+    <!-- Notification channels -->
+    <string name="playback_channel_name">Playback</string>
+    <string name="playback_channel_description">Controls for the discourse currently playing</string>
+    <string name="download_channel_name">Downloads</string>
+    <string name="download_channel_description">Progress for discourses saved for offline listening</string>
+    <string name="downloading">Downloading discourses</string>
+    <string name="download_completed">Download complete</string>
+    <string name="download_failed">Download failed</string>
+
+    <!-- Media session (notification, Android Auto) -->
+    <string name="media_rewind_15">Rewind 15 seconds</string>
+    <string name="media_forward_30">Forward 30 seconds</string>
+    <string name="media_root_subtitle">Discourses and meditations</string>
+    <string name="media_categories">Categories</string>
+    <string name="media_categories_subtitle">Browse by tradition</string>
+    <string name="media_all_series">All series</string>
+    <string name="media_all_series_subtitle">Every discourse series</string>
+
+    <!-- Common actions -->
+    <string name="action_cancel">Cancel</string>
+    <string name="action_done">Done</string>
+    <string name="action_close">Close</string>
+    <string name="action_clear">Clear</string>
+    <string name="action_remove">Remove</string>
+    <string name="action_delete">Delete</string>
+    <string name="action_try_again">Try again</string>
+    <string name="action_see_all">See all</string>
+    <string name="action_show_more">Show more</string>
+    <string name="action_show_less">Show less</string>
+    <string name="action_play_all">Play all</string>
+    <string name="action_shuffle">Shuffle</string>
+    <string name="action_pause">Pause</string>
+    <string name="action_resume">Resume</string>
+
+    <!-- Home -->
+    <string name="greeting_morning">Good morning</string>
+    <string name="greeting_afternoon">Good afternoon</string>
+    <string name="greeting_evening">Good evening</string>
+    <string name="greeting_night">Good night</string>
+    <string name="home_title">Osho</string>
+    <string name="home_themes">Browse by theme</string>
+    <string name="home_themes_subtitle">Wherever you are right now</string>
+    <string name="home_talk_of_day">Talk of the day</string>
+    <plurals name="streak_days">
+        <item quantity="one">%d day in a row</item>
+        <item quantity="other">%d days in a row</item>
+    </plurals>
+    <string name="cd_play_talk_of_day">Play today\'s talk, %1$s</string>
+    <string name="home_continue">Continue Listening</string>
+    <string name="home_continue_subtitle">Pick up where you left off</string>
+    <string name="home_popular">Popular Discourses</string>
+    <string name="home_popular_subtitle">The most listened series</string>
+    <string name="home_recent">Recently Added</string>
+    <string name="home_recent_subtitle">New to the library</string>
+    <string name="home_meditation">Meditation Series</string>
+    <string name="home_meditation_subtitle">For sitting quietly</string>
+    <string name="home_categories">Categories</string>
+    <string name="home_categories_subtitle">Browse by tradition</string>
+    <string name="home_trending">Trending</string>
+    <string name="home_trending_subtitle">What others are hearing today</string>
+    <string name="home_recommended">Recommended</string>
+    <string name="home_recommended_subtitle">Chosen for you</string>
+    <string name="home_error_title">Something went wrong</string>
+    <string name="home_error_generic">Could not load the discourse library.</string>
+    <string name="home_empty_title">Nothing here yet</string>
+    <string name="home_empty_message">The discourse library could not be read. Pull down to try again.</string>
+
+    <!-- Radio -->
+    <string name="radio_title">Radio</string>
+    <string name="radio_subtitle">Endless, shuffled — just press play</string>
+    <string name="radio_all_station">Osho Radio</string>
+    <string name="radio_all_station_detail">The whole library, shuffled</string>
+    <string name="radio_stations">Stations</string>
+    <string name="radio_stations_subtitle">One tradition at a time</string>
+    <string name="radio_on_air">On air</string>
+    <string name="radio_empty_title">No stations yet</string>
+    <string name="radio_empty_message">Stations are built from the library. Change the discourse language in Settings if nothing appears here.</string>
+
+    <!-- Counts -->
+    <plurals name="talk_count">
+        <item quantity="one">%d talk</item>
+        <item quantity="other">%d talks</item>
+    </plurals>
+    <plurals name="series_count">
+        <item quantity="one">%d series</item>
+        <item quantity="other">%d series</item>
+    </plurals>
+    <plurals name="talks_offline_count">
+        <item quantity="one">%d talk saved offline</item>
+        <item quantity="other">%d talks saved offline</item>
+    </plurals>
+    <plurals name="talks_played_count">
+        <item quantity="one">%d talk played</item>
+        <item quantity="other">%d talks played</item>
+    </plurals>
+
+    <!-- Durations -->
+    <string name="duration_hours_minutes">%1$dh %2$02dm</string>
+    <string name="duration_hours">%1$dh</string>
+    <string name="duration_minutes">%1$d min</string>
+    <plurals name="duration_spoken_hours">
+        <item quantity="one">%d hour</item>
+        <item quantity="other">%d hours</item>
+    </plurals>
+    <plurals name="duration_spoken_minutes">
+        <item quantity="one">%d minute</item>
+        <item quantity="other">%d minutes</item>
+    </plurals>
+
+    <!-- Language -->
+    <string name="discourse_language_english">English</string>
+    <string name="discourse_language_hindi">Hindi</string>
+    <string name="language_title">Discourse language</string>
+    <string name="content_language_all">English and Hindi</string>
+    <string name="content_language_english">English only</string>
+    <string name="content_language_hindi">Hindi only</string>
+    <string name="onboarding_title">Which discourses?</string>
+    <string name="onboarding_message">Osho spoke in both English and Hindi. Choose what you would like to browse — you can change this any time in Settings.</string>
+    <string name="onboarding_english">English</string>
+    <string name="onboarding_hindi">हिन्दी · Hindi</string>
+    <string name="onboarding_both">Both</string>
+    <string name="onboarding_english_detail">175 series</string>
+    <string name="onboarding_hindi_detail">176 series</string>
+    <string name="onboarding_both_detail">351 series</string>
+
+    <!-- Search -->
+    <string name="search_placeholder">Series, talks, categories</string>
+    <string name="search_recent">Recent searches</string>
+    <string name="search_browse">Browse everything</string>
+    <string name="search_section_series">Series</string>
+    <string name="search_section_talks">Talks</string>
+    <string name="search_section_categories">Categories</string>
+    <string name="search_empty_title">No matches</string>
+    <string name="search_empty_message">Nothing in the library matches “%1$s”. Try a shorter word, a master\'s name, or a tradition like Zen or Sufi.</string>
+
+    <!-- Library -->
+    <string name="library_title">Your library</string>
+    <string name="library_downloads">Downloads</string>
+    <string name="library_downloads_subtitle">Saved for offline listening</string>
+    <string name="library_favourites">Favourites</string>
+    <string name="library_favourites_subtitle">Series and talks you saved</string>
+    <string name="library_history">History</string>
+    <string name="library_all_series">All Series</string>
+    <string name="library_all_series_subtitle">Browse the whole library</string>
+    <string name="library_empty">Nothing here yet</string>
+
+    <string name="action_clear_all">Clear all</string>
+    <string name="continue_clear_all_title">Clear Continue Listening?</string>
+    <string name="continue_clear_all_message">Every saved position will be forgotten. Favourites, bookmarks and downloads are untouched.</string>
+    <string name="cd_clear_all_continue">Clear all saved positions</string>
+    <string name="cd_remove_from_continue">Remove %1$s from Continue Listening</string>
+
+    <!-- Playlists -->
+    <string name="playlists_title">Playlists</string>
+    <string name="playlists_subtitle">Sequences you put together</string>
+    <string name="playlists_empty_title">No playlists yet</string>
+    <string name="playlists_empty_message">Build your own sequence of talks — start one from the player, or with the button below.</string>
+    <string name="playlist_new">New playlist</string>
+    <string name="playlist_name_hint">Playlist name</string>
+    <string name="playlist_create">Create</string>
+    <string name="playlist_rename">Rename</string>
+    <string name="playlist_delete">Delete playlist</string>
+    <string name="playlist_delete_title">Delete “%1$s”?</string>
+    <string name="playlist_delete_message">The playlist is removed. The talks themselves stay in the library.</string>
+    <string name="playlist_empty_title">Nothing in here yet</string>
+    <string name="playlist_empty_message">Add talks from the player using the playlist button.</string>
+    <string name="playlist_add_to">Add to playlist</string>
+    <string name="cd_add_to_playlist">Add this talk to a playlist</string>
+    <string name="cd_move_up">Move %1$s up</string>
+    <string name="cd_move_down">Move %1$s down</string>
+    <string name="cd_remove_from_playlist">Remove %1$s from this playlist</string>
+    <string name="cd_playlist_options">Options for %1$s</string>
+
+    <!-- Collections -->
+    <string name="collection_theme">Theme</string>
+    <string name="collection_category_subtitle">Series in this tradition</string>
+    <string name="collection_continue_subtitle">Talks you have started</string>
+    <string name="collection_history_subtitle">Most recent first</string>
+    <string name="collection_all_subtitle">%1$d series in the library</string>
+    <string name="collection_empty_favourites">Tap the heart on any series and it will appear here.</string>
+    <string name="collection_empty_history">Talks you play will be listed here.</string>
+    <string name="collection_empty_continue">Start a talk and you can pick it up from here later.</string>
+    <string name="collection_empty_generic">Nothing matches this collection yet.</string>
+
+    <!-- Detail -->
+    <string name="detail_talks">Talks</string>
+    <string name="detail_missing">This series is no longer in the library.</string>
+    <string name="detail_download_title">Download “%1$s”?</string>
+    <string name="detail_download_message">%1$s · roughly %2$s of storage. You can pause or stop this at any time.</string>
+    <string name="detail_download_confirm">Download all</string>
+    <string name="detail_remove_title">Remove downloads?</string>
+    <string name="detail_stop_title">Stop downloading?</string>
+    <string name="detail_remove_message">“%1$s” will be removed from this device. It stays available to stream.</string>
+    <string name="detail_stop_message">Downloading will stop and the talks saved so far will be deleted.</string>
+    <string name="detail_stop_confirm">Stop and delete</string>
+
+    <!-- Player -->
+    <string name="player_playing_from">Playing from</string>
+    <string name="player_radio">RADIO</string>
+    <string name="player_nothing">Nothing is playing</string>
+    <string name="player_up_next">Up next</string>
+    <string name="player_queue_subtitle">%1$d talks in queue</string>
+    <string name="player_speed">Playback speed</string>
+    <string name="player_speed_subtitle">Applies to everything you play</string>
+    <string name="player_sleep_timer">Sleep timer</string>
+    <string name="player_sleep_subtitle">Playback will stop when the timer ends</string>
+    <string name="player_sleep_remaining">%1$s remaining</string>
+    <string name="player_sleep_stopping">Stopping at the end of this talk</string>
+    <string name="player_sleep_end_of_talk_title">Stop at the end of this talk</string>
+    <string name="player_sleep_end_of_talk_detail">Lets the discourse finish, then stops</string>
+    <string name="player_sleep_after">Or stop after</string>
+    <string name="player_sleep_fade_note">The volume fades down before playback stops, so the ending never jolts you awake.</string>
+    <string name="player_sleep_fading">Fading out — %1$s left</string>
+    <string name="player_sleep_off">Turn off</string>
+    <string name="player_downloading">Downloading</string>
+    <string name="player_download_progress">%1$d%% downloaded</string>
+    <string name="player_download_paused">Paused at %1$d%%</string>
+    <string name="player_remove_download_title">Remove download?</string>
+    <string name="player_remove_download_message">“%1$s” will be deleted from this device. It stays available to stream.</string>
+    <string name="player_reconnecting">Reconnecting…</string>
+    <string name="player_source_down">oshoworld.com is not responding</string>
+    <string name="player_error_source_down">oshoworld.com is not responding. The site looks to be down — please try again later. Downloaded talks still play.</string>
+    <string name="player_source_down_retrying">oshoworld.com is not responding. Still trying — please wait.</string>
+    <string name="player_error_network">No connection. Check your network and try again.</string>
+    <string name="player_error_unavailable">This talk is unavailable right now.</string>
+    <string name="player_error_generic">Playback failed. Please try again.</string>
+    <string name="player_share_chooser">Share talk</string>
+    <string name="player_share_text">Listening to “%1$s” from %2$s by %3$s on %4$s.</string>
+    <string name="player_share_text_no_series">Listening to “%1$s” by %2$s on %3$s.</string>
+
+    <!-- Downloads -->
+    <string name="downloads_title">Downloads</string>
+    <string name="downloads_empty_title">No downloads yet</string>
+    <string name="downloads_empty_message">Tap the download icon on any series or talk to keep it on this device and listen without a connection.</string>
+    <string name="downloads_delete_all_title">Delete all downloads?</string>
+    <string name="downloads_delete_all_message">%1$d talks will be removed from this device. They stay available to stream.</string>
+    <string name="downloads_delete_all_confirm">Delete all</string>
+    <string name="downloads_delete_series_title">Delete “%1$s”?</string>
+    <string name="downloads_delete_series_message">%1$d talks will be removed from this device.</string>
+    <string name="downloads_storage_summary">%1$s · %2$s on this device</string>
+    <string name="downloads_group_ready">%1$d of %2$d ready</string>
+    <string name="downloads_group_downloading">%1$d downloading</string>
+
+    <!-- Settings -->
+    <string name="settings_title">Settings</string>
+    <string name="settings_language">Language</string>
+    <string name="settings_app_language">App language</string>
+    <string name="settings_app_language_english">English</string>
+    <string name="settings_app_language_hindi">हिन्दी</string>
+    <string name="settings_appearance">Appearance</string>
+    <string name="settings_playback">Playback</string>
+    <string name="settings_downloads">Downloads</string>
+    <string name="settings_storage">Storage and data</string>
+    <string name="settings_about">About</string>
+    <string name="settings_theme">Theme</string>
+    <string name="settings_theme_system">Follow system</string>
+    <string name="settings_theme_light">Light</string>
+    <string name="settings_theme_dark">Dark</string>
+    <string name="settings_material_you">Material You</string>
+    <string name="settings_material_you_subtitle">Tint the app with your wallpaper colours</string>
+    <string name="settings_default_speed">Default speed</string>
+    <string name="settings_default_timer">Default sleep timer</string>
+    <string name="settings_timer_off">Off</string>
+    <string name="settings_dim_player">Dim the player</string>
+    <string name="settings_dim_player_subtitle">Fade the screen down when you stop touching it</string>
+    <string name="settings_skip_silence">Skip silence</string>
+    <string name="settings_skip_silence_subtitle">Shorten long pauses between sentences</string>
+    <string name="settings_parallel_downloads">Simultaneous downloads</string>
+    <string name="settings_parallel_downloads_subtitle">How many talks download at once</string>
+    <string name="settings_wifi_only">Wi-Fi only</string>
+    <string name="settings_wifi_only_subtitle">Pause downloads on mobile data</string>
+    <string name="settings_clear_cache">Clear cache</string>
+    <string name="settings_clear_cache_title">Clear cache?</string>
+    <string name="settings_clear_cache_message">Streamed audio and artwork will be re-fetched next time. Downloads, favourites and history are untouched.</string>
+    <string name="settings_clear_history">Clear listening history</string>
+    <string name="settings_clear_history_title">Clear listening history?</string>
+    <string name="settings_clear_history_message">History and Recently Played will be emptied. Resume positions and favourites are kept.</string>
+    <string name="settings_support">Support</string>
+    <string name="settings_donate">Support development</string>
+    <string name="settings_donate_subtitle">If the app has been useful</string>
+    <string name="donate_upi">Pay with UPI</string>
+    <string name="donate_upi_detail">Google Pay, PhonePe, Paytm and others</string>
+    <string name="donate_other_amount">Other amount</string>
+    <string name="donate_international">Other ways to give</string>
+    <string name="donate_international_detail">Card or PayPal, outside India</string>
+    <string name="settings_developer">Developer</string>
+    <string name="settings_developer_name">Rishabh Bhardwaj</string>
+    <string name="settings_developer_site">warlordsoftwares.com</string>
+    <string name="settings_about_app">About this app</string>
+    <string name="settings_about_body">Version %1$s\n\nA player for Osho\'s recorded discourses. The catalogue ships with the app; audio is streamed on demand from oshoworld.com, where it is offered freely.\n\nBuilt with Jetpack Compose and Media3.</string>
+    <string name="settings_footer">Audio is streamed from oshoworld.com. This app is an independent player and is not affiliated with the source.</string>
+    <string name="settings_cache_cleared">Cache cleared</string>
+    <string name="settings_history_cleared">Listening history cleared</string>
+
+    <string name="time_left">%1$s left</string>
+    <!-- "12 talks · 1h 20m" — the standard two-fact line under a card. -->
+    <string name="dot_separated">%1$s · %2$s</string>
+    <string name="share_series_chooser">Share series</string>
+    <string name="share_series_text">“%1$s” — %2$s by %3$s, on %4$s.</string>
+
+    <!-- Accessibility -->
+    <string name="cd_play">Play</string>
+    <string name="cd_pause">Pause</string>
+    <string name="cd_next">Next talk</string>
+    <string name="cd_previous">Previous talk</string>
+    <string name="cd_expand_player">Open player</string>
+    <string name="cd_collapse_player">Collapse player</string>
+    <string name="cd_queue">Show queue</string>
+    <string name="cd_back">Navigate up</string>
+    <string name="cd_favourite">Add to favourites</string>
+    <string name="cd_unfavourite">Remove from favourites</string>
+    <string name="cd_download">Download</string>
+    <string name="cd_share">Share</string>
+    <string name="cd_change_language">Change discourse language</string>
+    <string name="cd_clear_search">Clear search</string>
+    <string name="cd_open">Open %1$s</string>
+    <string name="cd_play_item">Play %1$s</string>
+    <string name="cd_resume_item">Resume %1$s</string>
+    <string name="cd_browse">Browse %1$s</string>
+    <string name="cd_item_detail">%1$s. %2$s</string>
+    <string name="cd_continue_card">%1$s from %2$s. %3$s</string>
+    <string name="cd_station">%1$s station. %2$s</string>
+    <string name="cd_now_playing">Now playing.</string>
+    <string name="cd_paused">Paused.</string>
+    <string name="cd_track_row">%1$s, %2$s</string>
+    <string name="cd_more_options">More options for %1$s</string>
+    <string name="cd_downloaded_remove">Downloaded. Tap to remove</string>
+    <string name="cd_download_failed_retry">Download failed. Tap to retry</string>
+    <string name="cd_downloading">Downloading</string>
+    <string name="cd_download_offline">Download for offline</string>
+    <string name="cd_download_series">Download the whole series</string>
+    <string name="cd_downloaded_remove_series">Downloaded. Tap to remove the series</string>
+    <string name="cd_downloading_series">Downloading %1$d talks. Tap to stop</string>
+    <string name="cd_pause_downloads">Pause downloads</string>
+    <string name="cd_resume_downloads">Resume downloads</string>
+    <string name="cd_delete_all_downloads">Delete all downloads</string>
+    <string name="cd_delete_series_downloads">Delete %1$s from this device</string>
+    <string name="cd_share_series">Share this series</string>
+    <string name="cd_shuffle_on">Shuffle on</string>
+    <string name="cd_shuffle_off">Shuffle off</string>
+    <string name="cd_repeat_off">Repeat off</string>
+    <string name="cd_repeat_all">Repeat all</string>
+    <string name="cd_repeat_one">Repeat one</string>
+    <string name="cd_sleep_timer_remaining">Sleep timer, %1$s remaining</string>
+    <string name="cd_playback_speed_current">Playback speed, currently %1$s</string>
+    <string name="cd_remove_from_queue">Remove %1$s from queue</string>
+    <string name="cd_seek">Seek. %1$s of %2$s</string>
+    <string name="cd_artwork_for">Artwork for %1$s</string>
+    <string name="cd_mini_player">Now playing: %1$s by %2$s. Swipe sideways to dismiss.</string>
+    <string name="cd_remove_recent_search">Remove %1$s from recent searches</string>
+    <string name="cd_expand_description">Expand description</string>
+    <string name="cd_collapse_description">Collapse description</string>
+    <string name="cd_storage_summary">%1$d talks across %2$d series, using %3$s of storage</string>
+    <string name="cd_series_result">%1$s, %2$s, %3$s</string>
+    <string name="cd_track_result">%1$s from %2$s, %3$s</string>
+</resources>

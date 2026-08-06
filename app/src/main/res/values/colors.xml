@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Mirrors OshoColors.DarkSurface so the splash window matches the first
+         Compose frame and there is no flash on cold start. -->
+    <color name="osho_surface">#FF0B0A0F</color>
+    <color name="osho_launcher_background">#FF120F1A</color>
+</resources>

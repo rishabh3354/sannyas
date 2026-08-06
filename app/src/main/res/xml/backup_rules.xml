@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Backup is opt-in: only the paths listed here are backed up, so downloaded
+  audio (files/downloads) and the streaming cache are excluded by omission.
+  Adding explicit <exclude> entries for them would be invalid, because a path
+  can only be excluded from within an included one.
+-->
+<full-backup-content>
+    <include domain="database" path="osho-database" />
+    <include domain="sharedpref" path="." />
+    <include domain="file" path="datastore" />
+</full-backup-content>

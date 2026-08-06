@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Cloud backup and device-to-device transfer are opt-in: only the paths listed
+  here are copied. Downloaded audio (files/downloads) and the streaming cache
+  are large and re-fetchable, so they are excluded by simply not being listed.
+-->
+<data-extraction-rules>
+    <cloud-backup>
+        <include domain="database" path="osho-database" />
+        <include domain="sharedpref" path="." />
+        <include domain="file" path="datastore" />
+    </cloud-backup>
+    <device-transfer>
+        <include domain="database" path="osho-database" />
+        <include domain="sharedpref" path="." />
+        <include domain="file" path="datastore" />
+    </device-transfer>
+</data-extraction-rules>

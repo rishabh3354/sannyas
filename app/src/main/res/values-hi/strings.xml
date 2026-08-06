@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Hindi interface strings.
+
+  Register is deliberately plain and respectful rather than formal-literary:
+  the audience is listeners, not scholars. Where an English word is in ordinary
+  spoken use (रेडियो, डाउनलोड, थीम) it is kept, because a Sanskritised coinage
+  would read as stilted on a phone.
+-->
+<resources>
+    <!-- Navigation -->
+    <string name="nav_home">होम</string>
+    <string name="nav_radio">रेडियो</string>
+    <string name="nav_search">खोजें</string>
+    <string name="nav_library">लाइब्रेरी</string>
+    <string name="nav_settings">सेटिंग्स</string>
+
+    <!-- Notification channels -->
+    <string name="playback_channel_name">प्लेबैक</string>
+    <string name="playback_channel_description">अभी चल रहे प्रवचन के नियंत्रण</string>
+    <string name="download_channel_name">डाउनलोड</string>
+    <string name="download_channel_description">ऑफ़लाइन सुनने के लिए सहेजे गए प्रवचनों की प्रगति</string>
+    <string name="downloading">प्रवचन डाउनलोड हो रहे हैं</string>
+    <string name="download_completed">डाउनलोड पूरा हुआ</string>
+    <string name="download_failed">डाउनलोड विफल</string>
+
+    <!-- Media session (notification, Android Auto) -->
+    <string name="media_rewind_15">15 सेकंड पीछे</string>
+    <string name="media_forward_30">30 सेकंड आगे</string>
+    <string name="media_root_subtitle">प्रवचन और ध्यान</string>
+    <string name="media_categories">श्रेणियाँ</string>
+    <string name="media_categories_subtitle">परंपरा से चुनें</string>
+    <string name="media_all_series">सभी शृंखलाएँ</string>
+    <string name="media_all_series_subtitle">हर प्रवचन शृंखला</string>
+
+    <!-- Common actions -->
+    <string name="action_cancel">रद्द करें</string>
+    <string name="action_done">हो गया</string>
+    <string name="action_close">बंद करें</string>
+    <string name="action_clear">साफ़ करें</string>
+    <string name="action_remove">हटाएँ</string>
+    <string name="action_delete">मिटाएँ</string>
+    <string name="action_try_again">फिर कोशिश करें</string>
+    <string name="action_see_all">सभी देखें</string>
+    <string name="action_show_more">और पढ़ें</string>
+    <string name="action_show_less">कम पढ़ें</string>
+    <string name="action_play_all">सभी चलाएँ</string>
+    <string name="action_shuffle">बेतरतीब</string>
+    <string name="action_pause">रोकें</string>
+    <string name="action_resume">जारी रखें</string>
+
+    <!-- Home -->
+    <string name="greeting_morning">सुप्रभात</string>
+    <string name="greeting_afternoon">नमस्कार</string>
+    <string name="greeting_evening">शुभ संध्या</string>
+    <string name="greeting_night">शुभ रात्रि</string>
+    <string name="home_title">ओशो</string>
+    <string name="home_themes">विषय से चुनें</string>
+    <string name="home_themes_subtitle">आप अभी जहाँ भी हैं</string>
+    <string name="home_talk_of_day">आज का प्रवचन</string>
+    <plurals name="streak_days">
+        <item quantity="one">लगातार %d दिन</item>
+        <item quantity="other">लगातार %d दिन</item>
+    </plurals>
+    <string name="cd_play_talk_of_day">आज का प्रवचन चलाएँ, %1$s</string>
+    <string name="home_continue">सुनना जारी रखें</string>
+    <string name="home_continue_subtitle">जहाँ छोड़ा था वहीं से</string>
+    <string name="home_popular">लोकप्रिय प्रवचन</string>
+    <string name="home_popular_subtitle">सर्वाधिक सुनी गई शृंखलाएँ</string>
+    <string name="home_recent">हाल में जोड़े गए</string>
+    <string name="home_recent_subtitle">लाइब्रेरी में नया</string>
+    <string name="home_meditation">ध्यान शृंखला</string>
+    <string name="home_meditation_subtitle">मौन में बैठने के लिए</string>
+    <string name="home_categories">श्रेणियाँ</string>
+    <string name="home_categories_subtitle">परंपरा से चुनें</string>
+    <string name="home_trending">चर्चा में</string>
+    <string name="home_trending_subtitle">आज दूसरे क्या सुन रहे हैं</string>
+    <string name="home_recommended">आपके लिए</string>
+    <string name="home_recommended_subtitle">आपके लिए चुना गया</string>
+    <string name="home_error_title">कुछ गड़बड़ हुई</string>
+    <string name="home_error_generic">प्रवचन लाइब्रेरी नहीं खुल सकी।</string>
+    <string name="home_empty_title">अभी यहाँ कुछ नहीं</string>
+    <string name="home_empty_message">प्रवचन लाइब्रेरी पढ़ी नहीं जा सकी। फिर कोशिश करने के लिए नीचे खींचें।</string>
+
+    <!-- Radio -->
+    <string name="radio_title">रेडियो</string>
+    <string name="radio_subtitle">अनवरत, बेतरतीब — बस चलाएँ</string>
+    <string name="radio_all_station">ओशो रेडियो</string>
+    <string name="radio_all_station_detail">पूरी लाइब्रेरी, बेतरतीब</string>
+    <string name="radio_stations">स्टेशन</string>
+    <string name="radio_stations_subtitle">एक बार में एक परंपरा</string>
+    <string name="radio_on_air">चल रहा है</string>
+    <string name="radio_empty_title">अभी कोई स्टेशन नहीं</string>
+    <string name="radio_empty_message">स्टेशन लाइब्रेरी से बनते हैं। यहाँ कुछ न दिखे तो सेटिंग्स में प्रवचन की भाषा बदलें।</string>
+
+    <!-- Counts -->
+    <plurals name="talk_count">
+        <item quantity="one">%d प्रवचन</item>
+        <item quantity="other">%d प्रवचन</item>
+    </plurals>
+    <plurals name="series_count">
+        <item quantity="one">%d शृंखला</item>
+        <item quantity="other">%d शृंखलाएँ</item>
+    </plurals>
+    <plurals name="talks_offline_count">
+        <item quantity="one">%d प्रवचन ऑफ़लाइन सहेजा</item>
+        <item quantity="other">%d प्रवचन ऑफ़लाइन सहेजे</item>
+    </plurals>
+    <plurals name="talks_played_count">
+        <item quantity="one">%d प्रवचन सुना</item>
+        <item quantity="other">%d प्रवचन सुने</item>
+    </plurals>
+
+    <!-- Durations -->
+    <string name="duration_hours_minutes">%1$dघं %2$02dमि</string>
+    <string name="duration_hours">%1$dघं</string>
+    <string name="duration_minutes">%1$d मिनट</string>
+    <plurals name="duration_spoken_hours">
+        <item quantity="one">%d घंटा</item>
+        <item quantity="other">%d घंटे</item>
+    </plurals>
+    <plurals name="duration_spoken_minutes">
+        <item quantity="one">%d मिनट</item>
+        <item quantity="other">%d मिनट</item>
+    </plurals>
+
+    <!-- Language -->
+    <string name="discourse_language_english">अंग्रेज़ी</string>
+    <string name="discourse_language_hindi">हिन्दी</string>
+    <string name="language_title">प्रवचन की भाषा</string>
+    <string name="content_language_all">अंग्रेज़ी और हिन्दी</string>
+    <string name="content_language_english">केवल अंग्रेज़ी</string>
+    <string name="content_language_hindi">केवल हिन्दी</string>
+    <string name="onboarding_title">कौन से प्रवचन?</string>
+    <string name="onboarding_message">ओशो ने अंग्रेज़ी और हिन्दी दोनों में बोला। चुनें कि आप क्या सुनना चाहेंगे — इसे सेटिंग्स में कभी भी बदल सकते हैं।</string>
+    <string name="onboarding_english">English</string>
+    <string name="onboarding_hindi">हिन्दी</string>
+    <string name="onboarding_both">दोनों</string>
+    <string name="onboarding_english_detail">175 शृंखलाएँ</string>
+    <string name="onboarding_hindi_detail">176 शृंखलाएँ</string>
+    <string name="onboarding_both_detail">351 शृंखलाएँ</string>
+
+    <!-- Search -->
+    <string name="search_placeholder">शृंखला, प्रवचन, श्रेणियाँ</string>
+    <string name="search_recent">हाल की खोजें</string>
+    <string name="search_browse">सब कुछ देखें</string>
+    <string name="search_section_series">शृंखलाएँ</string>
+    <string name="search_section_talks">प्रवचन</string>
+    <string name="search_section_categories">श्रेणियाँ</string>
+    <string name="search_empty_title">कुछ नहीं मिला</string>
+    <string name="search_empty_message">“%1$s” से मेल खाता कुछ नहीं मिला। छोटा शब्द, किसी गुरु का नाम, या ज़ेन या सूफ़ी जैसी परंपरा आज़माएँ।</string>
+
+    <!-- Library -->
+    <string name="library_title">आपकी लाइब्रेरी</string>
+    <string name="library_downloads">डाउनलोड</string>
+    <string name="library_downloads_subtitle">ऑफ़लाइन सुनने के लिए सहेजे गए</string>
+    <string name="library_favourites">पसंदीदा</string>
+    <string name="library_favourites_subtitle">आपकी सहेजी शृंखलाएँ और प्रवचन</string>
+    <string name="library_history">इतिहास</string>
+    <string name="library_all_series">सभी शृंखलाएँ</string>
+    <string name="library_all_series_subtitle">पूरी लाइब्रेरी देखें</string>
+    <string name="library_empty">अभी यहाँ कुछ नहीं</string>
+
+    <string name="action_clear_all">सभी साफ़ करें</string>
+    <string name="continue_clear_all_title">सुनना जारी रखें साफ़ करें?</string>
+    <string name="continue_clear_all_message">जहाँ-जहाँ छोड़ा था वे सभी जगहें भुला दी जाएँगी। पसंदीदा, बुकमार्क और डाउनलोड अछूते रहेंगे।</string>
+    <string name="cd_clear_all_continue">सहेजी गई सभी जगहें साफ़ करें</string>
+    <string name="cd_remove_from_continue">%1$s को सुनना जारी रखें से हटाएँ</string>
+
+    <!-- Playlists -->
+    <string name="playlists_title">प्लेलिस्ट</string>
+    <string name="playlists_subtitle">आपकी बनाई शृंखलाएँ</string>
+    <string name="playlists_empty_title">अभी कोई प्लेलिस्ट नहीं</string>
+    <string name="playlists_empty_message">अपनी पसंद के प्रवचनों का क्रम बनाएँ — प्लेयर से शुरू करें, या नीचे के बटन से।</string>
+    <string name="playlist_new">नई प्लेलिस्ट</string>
+    <string name="playlist_name_hint">प्लेलिस्ट का नाम</string>
+    <string name="playlist_create">बनाएँ</string>
+    <string name="playlist_rename">नाम बदलें</string>
+    <string name="playlist_delete">प्लेलिस्ट मिटाएँ</string>
+    <string name="playlist_delete_title">“%1$s” मिटाएँ?</string>
+    <string name="playlist_delete_message">प्लेलिस्ट हट जाएगी। प्रवचन लाइब्रेरी में बने रहेंगे।</string>
+    <string name="playlist_empty_title">अभी इसमें कुछ नहीं</string>
+    <string name="playlist_empty_message">प्लेयर के प्लेलिस्ट बटन से प्रवचन जोड़ें।</string>
+    <string name="playlist_add_to">प्लेलिस्ट में जोड़ें</string>
+    <string name="cd_add_to_playlist">इस प्रवचन को प्लेलिस्ट में जोड़ें</string>
+    <string name="cd_move_up">%1$s को ऊपर ले जाएँ</string>
+    <string name="cd_move_down">%1$s को नीचे ले जाएँ</string>
+    <string name="cd_remove_from_playlist">%1$s को इस प्लेलिस्ट से हटाएँ</string>
+    <string name="cd_playlist_options">%1$s के विकल्प</string>
+
+    <!-- Collections -->
+    <string name="collection_theme">विषय</string>
+    <string name="collection_category_subtitle">इस परंपरा की शृंखलाएँ</string>
+    <string name="collection_continue_subtitle">जो प्रवचन आपने शुरू किए</string>
+    <string name="collection_history_subtitle">सबसे नए पहले</string>
+    <string name="collection_all_subtitle">लाइब्रेरी में %1$d शृंखलाएँ</string>
+    <string name="collection_empty_favourites">किसी भी शृंखला पर दिल दबाएँ, वह यहाँ दिखने लगेगी।</string>
+    <string name="collection_empty_history">आप जो प्रवचन सुनेंगे वे यहाँ दिखेंगे।</string>
+    <string name="collection_empty_continue">कोई प्रवचन शुरू करें, फिर यहाँ से आगे सुन सकेंगे।</string>
+    <string name="collection_empty_generic">इस संग्रह में अभी कुछ नहीं है।</string>
+
+    <!-- Detail -->
+    <string name="detail_talks">प्रवचन</string>
+    <string name="detail_missing">यह शृंखला अब लाइब्रेरी में नहीं है।</string>
+    <string name="detail_download_title">“%1$s” डाउनलोड करें?</string>
+    <string name="detail_download_message">%1$s · लगभग %2$s जगह लगेगी। इसे कभी भी रोक या बंद कर सकते हैं।</string>
+    <string name="detail_download_confirm">सभी डाउनलोड करें</string>
+    <string name="detail_remove_title">डाउनलोड हटाएँ?</string>
+    <string name="detail_stop_title">डाउनलोड करना बंद करें?</string>
+    <string name="detail_remove_message">“%1$s” इस डिवाइस से हटा दी जाएगी। स्ट्रीम करके सुनना जारी रहेगा।</string>
+    <string name="detail_stop_message">डाउनलोड रुक जाएगा और अब तक सहेजे गए प्रवचन मिटा दिए जाएँगे।</string>
+    <string name="detail_stop_confirm">रोकें और मिटाएँ</string>
+
+    <!-- Player -->
+    <string name="player_playing_from">चल रहा है</string>
+    <string name="player_radio">रेडियो</string>
+    <string name="player_nothing">कुछ नहीं चल रहा</string>
+    <string name="player_up_next">आगे</string>
+    <string name="player_queue_subtitle">सूची में %1$d प्रवचन</string>
+    <string name="player_speed">चलने की गति</string>
+    <string name="player_speed_subtitle">आपके सभी प्रवचनों पर लागू</string>
+    <string name="player_sleep_timer">स्लीप टाइमर</string>
+    <string name="player_sleep_subtitle">समय पूरा होने पर प्लेबैक रुक जाएगा</string>
+    <string name="player_sleep_remaining">%1$s बाकी</string>
+    <string name="player_sleep_stopping">इस प्रवचन के अंत पर रुक जाएगा</string>
+    <string name="player_sleep_end_of_talk_title">इस प्रवचन के अंत पर रोकें</string>
+    <string name="player_sleep_end_of_talk_detail">प्रवचन पूरा होने दें, फिर रुक जाए</string>
+    <string name="player_sleep_after">या इतने समय बाद</string>
+    <string name="player_sleep_fade_note">रुकने से पहले आवाज़ धीरे-धीरे कम होती है, ताकि अंत आपकी नींद न तोड़े।</string>
+    <string name="player_sleep_fading">आवाज़ कम हो रही है — %1$s बाकी</string>
+    <string name="player_sleep_off">बंद करें</string>
+    <string name="player_downloading">डाउनलोड हो रहा है</string>
+    <string name="player_download_progress">%1$d%% डाउनलोड हुआ</string>
+    <string name="player_download_paused">%1$d%% पर रुका</string>
+    <string name="player_remove_download_title">डाउनलोड हटाएँ?</string>
+    <string name="player_remove_download_message">“%1$s” इस डिवाइस से मिटा दिया जाएगा। स्ट्रीम करके सुनना जारी रहेगा।</string>
+    <string name="player_reconnecting">फिर से जोड़ रहे हैं…</string>
+    <string name="player_source_down">oshoworld.com जवाब नहीं दे रहा</string>
+    <string name="player_error_source_down">oshoworld.com जवाब नहीं दे रहा। लगता है साइट बंद है — कृपया कुछ देर बाद फिर देखें। डाउनलोड किए प्रवचन अब भी चलेंगे।</string>
+    <string name="player_source_down_retrying">oshoworld.com जवाब नहीं दे रहा। कोशिश जारी है — कृपया प्रतीक्षा करें।</string>
+    <string name="player_error_network">कनेक्शन नहीं है। नेटवर्क जाँचकर फिर कोशिश करें।</string>
+    <string name="player_error_unavailable">यह प्रवचन अभी उपलब्ध नहीं है।</string>
+    <string name="player_error_generic">प्लेबैक विफल। फिर कोशिश करें।</string>
+    <string name="player_share_chooser">प्रवचन साझा करें</string>
+    <string name="player_share_text">%4$s पर %3$s का “%1$s” (%2$s) सुन रहे हैं।</string>
+    <string name="player_share_text_no_series">%3$s पर %2$s का “%1$s” सुन रहे हैं।</string>
+
+    <!-- Downloads -->
+    <string name="downloads_title">डाउनलोड</string>
+    <string name="downloads_empty_title">अभी कोई डाउनलोड नहीं</string>
+    <string name="downloads_empty_message">किसी भी शृंखला या प्रवचन पर डाउनलोड का चिह्न दबाएँ, और बिना इंटरनेट के सुनें।</string>
+    <string name="downloads_delete_all_title">सभी डाउनलोड मिटाएँ?</string>
+    <string name="downloads_delete_all_message">%1$d प्रवचन इस डिवाइस से हटा दिए जाएँगे। स्ट्रीम करके सुनना जारी रहेगा।</string>
+    <string name="downloads_delete_all_confirm">सभी मिटाएँ</string>
+    <string name="downloads_delete_series_title">“%1$s” मिटाएँ?</string>
+    <string name="downloads_delete_series_message">%1$d प्रवचन इस डिवाइस से हटा दिए जाएँगे।</string>
+    <string name="downloads_storage_summary">इस डिवाइस पर %1$s · %2$s</string>
+    <string name="downloads_group_ready">%2$d में से %1$d तैयार</string>
+    <string name="downloads_group_downloading">%1$d डाउनलोड हो रहे</string>
+
+    <!-- Settings -->
+    <string name="settings_title">सेटिंग्स</string>
+    <string name="settings_language">भाषा</string>
+    <string name="settings_app_language">ऐप की भाषा</string>
+    <string name="settings_app_language_english">English</string>
+    <string name="settings_app_language_hindi">हिन्दी</string>
+    <string name="settings_appearance">रूप-रंग</string>
+    <string name="settings_playback">प्लेबैक</string>
+    <string name="settings_downloads">डाउनलोड</string>
+    <string name="settings_storage">स्टोरेज और डेटा</string>
+    <string name="settings_about">परिचय</string>
+    <string name="settings_theme">थीम</string>
+    <string name="settings_theme_system">सिस्टम के अनुसार</string>
+    <string name="settings_theme_light">हल्का</string>
+    <string name="settings_theme_dark">गहरा</string>
+    <string name="settings_material_you">मटीरियल यू</string>
+    <string name="settings_material_you_subtitle">आपके वॉलपेपर के रंग ऐप पर लागू करें</string>
+    <string name="settings_default_speed">डिफ़ॉल्ट गति</string>
+    <string name="settings_default_timer">डिफ़ॉल्ट स्लीप टाइमर</string>
+    <string name="settings_timer_off">बंद</string>
+    <string name="settings_dim_player">प्लेयर मंद करें</string>
+    <string name="settings_dim_player_subtitle">हाथ हटाने पर स्क्रीन धीरे-धीरे मंद हो जाए</string>
+    <string name="settings_skip_silence">मौन छोड़ें</string>
+    <string name="settings_skip_silence_subtitle">वाक्यों के बीच लंबे ठहराव छोटे करें</string>
+    <string name="settings_parallel_downloads">एक साथ डाउनलोड</string>
+    <string name="settings_parallel_downloads_subtitle">एक समय में कितने प्रवचन डाउनलोड हों</string>
+    <string name="settings_wifi_only">केवल वाई-फ़ाई</string>
+    <string name="settings_wifi_only_subtitle">मोबाइल डेटा पर डाउनलोड रोकें</string>
+    <string name="settings_clear_cache">कैश साफ़ करें</string>
+    <string name="settings_clear_cache_title">कैश साफ़ करें?</string>
+    <string name="settings_clear_cache_message">स्ट्रीम किया ऑडियो और चित्र अगली बार फिर लाए जाएँगे। डाउनलोड, पसंदीदा और इतिहास अछूते रहेंगे।</string>
+    <string name="settings_clear_history">सुनने का इतिहास साफ़ करें</string>
+    <string name="settings_clear_history_title">सुनने का इतिहास साफ़ करें?</string>
+    <string name="settings_clear_history_message">इतिहास और हाल में सुने गए खाली हो जाएँगे। जहाँ छोड़ा था वे जगहें और पसंदीदा बने रहेंगे।</string>
+    <string name="settings_support">सहयोग</string>
+    <string name="settings_donate">विकास में सहयोग करें</string>
+    <string name="settings_donate_subtitle">यदि यह ऐप उपयोगी लगा हो</string>
+    <string name="donate_upi">UPI से भेजें</string>
+    <string name="donate_upi_detail">Google Pay, PhonePe, Paytm आदि</string>
+    <string name="donate_other_amount">अन्य राशि</string>
+    <string name="donate_international">अन्य तरीके</string>
+    <string name="donate_international_detail">भारत के बाहर — कार्ड या PayPal</string>
+    <string name="settings_developer">डेवलपर</string>
+    <string name="settings_developer_name">ऋषभ भारद्वाज</string>
+    <string name="settings_developer_site">warlordsoftwares.com</string>
+    <string name="settings_about_app">इस ऐप के बारे में</string>
+    <string name="settings_about_body">संस्करण %1$s\n\nओशो के रिकॉर्ड किए प्रवचनों का प्लेयर। सूची ऐप के साथ ही आती है; ऑडियो oshoworld.com से माँग पर स्ट्रीम होता है, जहाँ वह निःशुल्क उपलब्ध है।\n\nJetpack Compose और Media3 से बना।</string>
+    <string name="settings_footer">ऑडियो oshoworld.com से स्ट्रीम होता है। यह एक स्वतंत्र प्लेयर है और स्रोत से संबद्ध नहीं है।</string>
+    <string name="settings_cache_cleared">कैश साफ़ हो गया</string>
+    <string name="settings_history_cleared">सुनने का इतिहास साफ़ हो गया</string>
+
+    <string name="time_left">%1$s बाकी</string>
+    <string name="dot_separated">%1$s · %2$s</string>
+    <string name="share_series_chooser">शृंखला साझा करें</string>
+    <string name="share_series_text">%4$s पर “%1$s” — %3$s के %2$s।</string>
+
+    <!-- Accessibility -->
+    <string name="cd_play">चलाएँ</string>
+    <string name="cd_pause">रोकें</string>
+    <string name="cd_next">अगला प्रवचन</string>
+    <string name="cd_previous">पिछला प्रवचन</string>
+    <string name="cd_expand_player">प्लेयर खोलें</string>
+    <string name="cd_collapse_player">प्लेयर बंद करें</string>
+    <string name="cd_queue">सूची देखें</string>
+    <string name="cd_back">वापस जाएँ</string>
+    <string name="cd_favourite">पसंदीदा में जोड़ें</string>
+    <string name="cd_unfavourite">पसंदीदा से हटाएँ</string>
+    <string name="cd_download">डाउनलोड</string>
+    <string name="cd_share">साझा करें</string>
+    <string name="cd_change_language">प्रवचन की भाषा बदलें</string>
+    <string name="cd_clear_search">खोज साफ़ करें</string>
+    <string name="cd_open">%1$s खोलें</string>
+    <string name="cd_play_item">%1$s चलाएँ</string>
+    <string name="cd_resume_item">%1$s जारी रखें</string>
+    <string name="cd_browse">%1$s देखें</string>
+    <string name="cd_item_detail">%1$s। %2$s</string>
+    <string name="cd_continue_card">%2$s का %1$s। %3$s</string>
+    <string name="cd_station">%1$s स्टेशन। %2$s</string>
+    <string name="cd_now_playing">अभी चल रहा है।</string>
+    <string name="cd_paused">रुका हुआ है।</string>
+    <string name="cd_track_row">%1$s, %2$s</string>
+    <string name="cd_more_options">%1$s के और विकल्प</string>
+    <string name="cd_downloaded_remove">डाउनलोड हो चुका। हटाने के लिए दबाएँ</string>
+    <string name="cd_download_failed_retry">डाउनलोड विफल। फिर कोशिश करने के लिए दबाएँ</string>
+    <string name="cd_downloading">डाउनलोड हो रहा है</string>
+    <string name="cd_download_offline">ऑफ़लाइन के लिए डाउनलोड करें</string>
+    <string name="cd_download_series">पूरी शृंखला डाउनलोड करें</string>
+    <string name="cd_downloaded_remove_series">डाउनलोड हो चुकी। शृंखला हटाने के लिए दबाएँ</string>
+    <string name="cd_downloading_series">%1$d प्रवचन डाउनलोड हो रहे। रोकने के लिए दबाएँ</string>
+    <string name="cd_pause_downloads">डाउनलोड रोकें</string>
+    <string name="cd_resume_downloads">डाउनलोड जारी रखें</string>
+    <string name="cd_delete_all_downloads">सभी डाउनलोड मिटाएँ</string>
+    <string name="cd_delete_series_downloads">%1$s इस डिवाइस से मिटाएँ</string>
+    <string name="cd_share_series">यह शृंखला साझा करें</string>
+    <string name="cd_shuffle_on">बेतरतीब चालू</string>
+    <string name="cd_shuffle_off">बेतरतीब बंद</string>
+    <string name="cd_repeat_off">दोहराव बंद</string>
+    <string name="cd_repeat_all">सभी दोहराएँ</string>
+    <string name="cd_repeat_one">एक दोहराएँ</string>
+    <string name="cd_sleep_timer_remaining">स्लीप टाइमर, %1$s बाकी</string>
+    <string name="cd_playback_speed_current">चलने की गति, अभी %1$s</string>
+    <string name="cd_remove_from_queue">%1$s सूची से हटाएँ</string>
+    <string name="cd_seek">आगे-पीछे करें। %2$s में से %1$s</string>
+    <string name="cd_artwork_for">%1$s का चित्र</string>
+    <string name="cd_mini_player">अभी चल रहा है: %2$s का %1$s। हटाने के लिए बगल में खिसकाएँ।</string>
+    <string name="cd_remove_recent_search">%1$s हाल की खोजों से हटाएँ</string>
+    <string name="cd_expand_description">विवरण खोलें</string>
+    <string name="cd_collapse_description">विवरण बंद करें</string>
+    <string name="cd_storage_summary">%2$d शृंखलाओं के %1$d प्रवचन, %3$s जगह</string>
+    <string name="cd_series_result">%1$s, %2$s, %3$s</string>
+    <string name="cd_track_result">%2$s का %1$s, %3$s</string>
+</resources>
