@@ -8,13 +8,12 @@
 
 <br>
 
-[![Download APK](https://img.shields.io/github/v/release/rishabh3354/sannyas?style=for-the-badge&label=Download%20APK&color=6C4DF6)](https://gitlab.com/warlordsoftwares/sannyas/-/releases)
+[![Download APK](https://img.shields.io/gitlab/v/tag/warlordsoftwares%2Fsannyas?style=for-the-badge&label=Download%20APK&color=6C4DF6)](https://gitlab.com/warlordsoftwares/sannyas/-/releases)
 [![Website](https://img.shields.io/badge/Website-sannyas-1f1f2e?style=for-the-badge)](https://warlordsoftwares.gitlab.io/sannyas/)
 
 ![Android 7.0+](https://img.shields.io/badge/Android-7.0%2B-3DDC84?style=flat-square&logo=android&logoColor=white)
 ![Kotlin](https://img.shields.io/badge/Kotlin-2.0-7F52FF?style=flat-square&logo=kotlin&logoColor=white)
 ![Compose](https://img.shields.io/badge/Jetpack%20Compose-Material%203-4285F4?style=flat-square)
-[![Downloads](https://img.shields.io/github/downloads/rishabh3354/sannyas/total?style=flat-square&color=6C4DF6)](https://gitlab.com/warlordsoftwares/sannyas/-/releases)
 
 <br>
 
