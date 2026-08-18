@@ -8,13 +8,13 @@
 
 <br>
 
-[![Download APK](https://img.shields.io/github/v/release/rishabh3354/sannyas?style=for-the-badge&label=Download%20APK&color=6C4DF6)](https://github.com/rishabh3354/sannyas/releases/latest)
-[![Website](https://img.shields.io/badge/Website-sannyas-1f1f2e?style=for-the-badge)](https://rishabh3354.github.io/sannyas/)
+[![Download APK](https://img.shields.io/github/v/release/rishabh3354/sannyas?style=for-the-badge&label=Download%20APK&color=6C4DF6)](https://gitlab.com/warlordsoftwares/sannyas/-/releases)
+[![Website](https://img.shields.io/badge/Website-sannyas-1f1f2e?style=for-the-badge)](https://warlordsoftwares.gitlab.io/sannyas/)
 
 ![Android 7.0+](https://img.shields.io/badge/Android-7.0%2B-3DDC84?style=flat-square&logo=android&logoColor=white)
 ![Kotlin](https://img.shields.io/badge/Kotlin-2.0-7F52FF?style=flat-square&logo=kotlin&logoColor=white)
 ![Compose](https://img.shields.io/badge/Jetpack%20Compose-Material%203-4285F4?style=flat-square)
-[![Downloads](https://img.shields.io/github/downloads/rishabh3354/sannyas/total?style=flat-square&color=6C4DF6)](https://github.com/rishabh3354/sannyas/releases)
+[![Downloads](https://img.shields.io/github/downloads/rishabh3354/sannyas/total?style=flat-square&color=6C4DF6)](https://gitlab.com/warlordsoftwares/sannyas/-/releases)
 
 <br>
 
@@ -57,7 +57,7 @@ stopped.
 
 ## Install
 
-Grab **`sannyas-1.0.0.apk`** from the [latest release](https://github.com/rishabh3354/sannyas/releases/latest) and open it on your phone.
+Grab **`sannyas-1.0.0.apk`** from the [latest release](https://gitlab.com/warlordsoftwares/sannyas/-/releases) and open it on your phone.
 
 Android will ask you to allow installs from whichever app you opened it with — that's the normal one-time prompt for installing outside the Play Store.
 
@@ -131,7 +131,7 @@ Most of these run over an hour, so:
 
 Favourites, history and settings live on your device and are gone when you uninstall. The only network requests the app makes are for the audio and artwork themselves, streamed on demand from [oshoworld.com](https://oshoworld.com) — so that site sees your IP address, the same way visiting any website would.
 
-📄 **[Full privacy policy](https://rishabh3354.github.io/sannyas/privacy-policy.html)**
+📄 **[Full privacy policy](https://warlordsoftwares.gitlab.io/sannyas/privacy-policy.html)**
 
 ---
 

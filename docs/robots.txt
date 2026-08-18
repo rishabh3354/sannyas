@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://rishabh3354.github.io/sannyas/sitemap.xml
+Sitemap: https://warlordsoftwares.gitlab.io/sannyas/sitemap.xml

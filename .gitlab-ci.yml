@@ -1,0 +1,13 @@
+# Publishes docs/ as GitLab Pages -> https://warlordsoftwares.gitlab.io/sannyas/
+# The site (landing page + privacy policy) previously lived on GitHub Pages.
+pages:
+  stage: deploy
+  image: alpine:latest
+  script:
+    - mkdir -p public
+    - cp -r docs/. public/          # note the dot: copies dotfiles such as .nojekyll
+  artifacts:
+    paths:
+      - public
+  rules:
+    - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
