@@ -61,6 +61,14 @@ android {
         }
         release {
             signingConfig = signingConfigs.findByName("release")
+            // Play warns that the bundle has native code with no debug
+            // symbols. It is not actionable: the only two .so files come from
+            // androidx graphics-path and datastore, and both arrive already
+            // stripped, so there are no symbols to package. This setting is
+            // kept because it is correct for any native code we add ourselves
+            // — it just has nothing to do today. Do not spend time on that
+            // warning again.
+            ndk { debugSymbolLevel = "FULL" }
             isMinifyEnabled = true
             isShrinkResources = true
             proguardFiles(
