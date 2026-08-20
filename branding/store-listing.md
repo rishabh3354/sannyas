@@ -72,8 +72,8 @@ ABOUT THIS APP
 
 Sannyas is an independent player. It is not affiliated with, endorsed by, or connected to oshoworld.com or Osho International Foundation. Audio is streamed directly from the source rather than rehosted, and no discourse text is redistributed. References to Osho identify whose discourses the app plays; they are not a claim of affiliation.
 
-Open source: https://github.com/rishabh3354/sannyas
-Privacy policy: https://rishabh3354.github.io/sannyas/privacy-policy.html
+Website: https://warlordsoftwares.gitlab.io/sannyas/
+Privacy policy: https://warlordsoftwares.gitlab.io/sannyas/privacy-policy.html
 ```
 
 ---
@@ -96,5 +96,5 @@ versions — those exist only for the README.
 | App category | Music & Audio |
 | Tags | Meditation, Audiobooks, Spirituality |
 | Contact email | rishabh.bhardwaj33@gmail.com |
-| Website | https://rishabh3354.github.io/sannyas/ |
-| Privacy policy | https://rishabh3354.github.io/sannyas/privacy-policy.html |
+| Website | https://warlordsoftwares.gitlab.io/sannyas/ |
+| Privacy policy | https://warlordsoftwares.gitlab.io/sannyas/privacy-policy.html |
