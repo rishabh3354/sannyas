@@ -84,9 +84,9 @@ Privacy policy: https://warlordsoftwares.gitlab.io/sannyas/privacy-policy.html
 | --- | --- |
 | App icon (512×512) | `branding/play-store-icon-512.png` |
 | Feature graphic (1024×500) | `branding/play-feature-graphic-1024x500.png` |
-| Phone screenshots (min 2) | `branding/screenshots/01-home.png` … `04-browse.png` |
-| 7-inch tablet screenshots | `branding/screenshots/tablet-7in/` (1080x1920) |
-| 10-inch tablet screenshots | `branding/screenshots/tablet-10in/` (1440x2560) |
+| Phone screenshots (min 2) | `branding/store-panels/` (1080x1920) |
+| 7-inch tablet screenshots | `branding/store-panels-7in/` (1080x1920) |
+| 10-inch tablet screenshots | `branding/store-panels-10in/` (1440x2560) |
 
 Upload the **full-resolution** screenshots (1080×2316), not the `-thumb`
 versions — those exist only for the README.

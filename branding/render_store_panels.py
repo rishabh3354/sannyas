@@ -19,9 +19,18 @@ from pathlib import Path
 from PIL import Image, ImageDraw, ImageFilter, ImageFont
 
 ROOT = Path(__file__).resolve().parent.parent
-SRC = ROOT / "branding/screenshots"
 OUT = ROOT / "branding/store-panels"
-W, H, S = 1080, 1920, 2          # supersample x2, downsample at the end
+S = 2                            # supersample x2, downsample at the end
+
+# One entry per slot Play asks for. The tablet canvases are bigger because
+# 10-inch requires each side to be at least 1080px, and because the captures
+# behind them are genuinely higher resolution — scaling a 1080-wide phone
+# card up to fill a tablet slot would just look soft.
+SETS = {
+    "store-panels":        (1080, 1920, "screenshots"),
+    "store-panels-7in":    (1080, 1920, "screenshots/tablet-7in"),
+    "store-panels-10in":   (1440, 2560, "screenshots/tablet-10in"),
+}
 
 BOLD = "/home/warlord/.local/share/fonts/NotoSans-Bold.ttf"
 REG = "/home/warlord/.local/share/fonts/NotoSans-Regular.ttf"
@@ -35,6 +44,21 @@ PANELS = [
     ("Sleep timer.",     "Stops at the end of the talk",             "03-player.png", "#B24C7A", "#5E1F46"),
     ("Browse by theme.", "Zen, Buddha, Sufism, Tao and 50 more",     "04-browse.png", "#C2762B", "#6A3412"),
     ("No ads. No account.", "Nothing about you is collected",        "05-settings.png", "#4B3BA8", "#1C1340"),
+]
+
+# The tablet captures are a subset of the same journeys, so each reuses the
+# colour of the phone card with the same headline — the three slots read as
+# part of one set rather than a separate palette.
+PANELS_7IN = [
+    ("351 series.",      "Osho's discourses, in Hindi and English", "01-home.png",     "#6D4DF6", "#3B1E9E"),
+    ("Browse by theme.", "Zen, Buddha, Sufism, Tao and 50 more",    "02-discover.png", "#C2762B", "#6A3412"),
+    ("Sleep timer.",     "Stops at the end of the talk",            "03-player.png",   "#B24C7A", "#5E1F46"),
+]
+
+PANELS_10IN = [
+    ("351 series.",     "Osho's discourses, in Hindi and English", "01-home.png",   "#6D4DF6", "#3B1E9E"),
+    ("Listen offline.", "Download a talk or a whole series",       "02-series.png", "#1E7F8C", "#0C3E52"),
+    ("Sleep timer.",    "Stops at the end of the talk",            "03-player.png", "#B24C7A", "#5E1F46"),
 ]
 
 
@@ -75,42 +99,46 @@ def wrap(draw, text, font, max_w):
     return lines
 
 
-def build(headline, sub, shot_name, top, bottom):
+def build(headline, sub, shot_name, top, bottom, W, H, src_dir):
     cw, ch = W * S, H * S
     card = gradient((cw, ch), top, bottom)
     d = ImageDraw.Draw(card)
 
-    margin = 72 * S
-    f_head = ImageFont.truetype(BOLD, 86 * S)
-    f_sub = ImageFont.truetype(REG, 40 * S)
+    # Type and spacing are authored for a 1080-wide card; k rescales them
+    # so a 1440-wide tablet card keeps the same visual proportions rather
+    # than the same pixel sizes.
+    k = W / 1080
+    margin = int(72 * S * k)
+    f_head = ImageFont.truetype(BOLD, int(86 * S * k))
+    f_sub = ImageFont.truetype(REG, int(40 * S * k))
 
-    y = 104 * S
+    y = int(104 * S * k)
     for line in wrap(d, headline, f_head, cw - margin * 2):
         d.text((margin, y), line, font=f_head, fill="white")
-        y += 104 * S
-    y += 14 * S
+        y += int(104 * S * k)
+    y += int(14 * S * k)
     for line in wrap(d, sub, f_sub, cw - margin * 2):
         d.text((margin, y), line, font=f_sub, fill=(255, 255, 255, 220))
-        y += 54 * S
+        y += int(54 * S * k)
 
     # The capture sits below the type and runs off the bottom edge, so the card
     # reads as a window onto the app rather than a framed thumbnail.
-    shot = Image.open(SRC / shot_name).convert("RGB")
+    shot = Image.open(ROOT / "branding" / src_dir / shot_name).convert("RGB")
     target_w = int(cw * 0.78)
     scale = target_w / shot.width
     shot = shot.resize((target_w, int(shot.height * scale)), Image.LANCZOS)
-    shot = rounded(shot, 34 * S)
+    shot = rounded(shot, int(34 * S * k))
 
     sx = (cw - target_w) // 2
-    sy = y + 60 * S
+    sy = y + int(60 * S * k)
 
     # Soft drop shadow: the capture is dark and would otherwise merge into the
     # darker end of the gradient.
     shadow = Image.new("RGBA", (cw, ch), (0, 0, 0, 0))
     sd = ImageDraw.Draw(shadow)
     sd.rounded_rectangle([sx, sy, sx + target_w, sy + shot.height],
-                         radius=34 * S, fill=(0, 0, 0, 150))
-    shadow = shadow.filter(ImageFilter.GaussianBlur(26 * S))
+                         radius=int(34 * S * k), fill=(0, 0, 0, 150))
+    shadow = shadow.filter(ImageFilter.GaussianBlur(int(26 * S * k)))
     card = Image.alpha_composite(card.convert("RGBA"), shadow)
     card.paste(shot, (sx, sy), shot)
 
@@ -118,12 +146,21 @@ def build(headline, sub, shot_name, top, bottom):
 
 
 def main():
-    OUT.mkdir(parents=True, exist_ok=True)
-    for i, (head, sub, shot, top, bottom) in enumerate(PANELS, start=1):
-        img = build(head, sub, shot, top, bottom)
-        path = OUT / f"{i:02d}-{head.split('.')[0].lower().replace(' ', '-')}.png"
-        img.save(path, optimize=True)
-        print(f"  {path.name:28} {img.size[0]}x{img.size[1]}  {path.stat().st_size // 1024} KB")
+    for out_name, panels in (
+        ("store-panels", PANELS),
+        ("store-panels-7in", PANELS_7IN),
+        ("store-panels-10in", PANELS_10IN),
+    ):
+        W, H, src_dir = SETS[out_name]
+        out = ROOT / "branding" / out_name
+        out.mkdir(parents=True, exist_ok=True)
+        print(f"{out_name}  ({W}x{H})")
+        for i, (head, sub, shot, top, bottom) in enumerate(panels, start=1):
+            img = build(head, sub, shot, top, bottom, W, H, src_dir)
+            slug = head.split(".")[0].lower().replace(" ", "-")
+            path = out / f"{i:02d}-{slug}.png"
+            img.save(path, optimize=True)
+            print(f"  {path.name:28} {img.size[0]}x{img.size[1]}  {path.stat().st_size // 1024} KB")
 
 
 if __name__ == "__main__":
