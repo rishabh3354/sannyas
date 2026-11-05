@@ -26,12 +26,13 @@ W, H, S = 1024, 500, 3
 FONT_BOLD = "/home/warlord/.local/share/fonts/NotoSans-Bold.ttf"
 FONT_REG = "/home/warlord/.local/share/fonts/NotoSans-Regular.ttf"
 
-# --- brand colours, read from the shipped launcher background -----------------
-bg_vector = (ROOT / "app/src/main/res/drawable/ic_launcher_background.xml").read_text()
-stops = re.findall(r'android:offset="([\d.]+)"\s+android:color="#FF([0-9A-Fa-f]{6})"', bg_vector)
-if not stops:
-    raise SystemExit("could not read the launcher gradient")
-stops = [(float(o), tuple(int(c[i:i + 2], 16) for i in (0, 2, 4))) for o, c in stops]
+# --- brand colours -----------------------------------------------------------
+# Saffron, matching the launcher artwork. These were previously parsed out of
+# ic_launcher_background.xml, but that vector no longer describes the icon —
+# the launcher is illustrated artwork now — so the banner carries its own
+# stops rather than tracking a drawable the app has stopped using.
+STOPS_HEX = [(0.0, "E8920E"), (0.55, "B35A08"), (1.0, "7A3703")]
+stops = [(o, tuple(int(c[i:i + 2], 16) for i in (0, 2, 4))) for o, c in STOPS_HEX]
 
 # --- catalog figures, counted rather than remembered --------------------------
 catalog = json.loads((ROOT / "app/src/main/assets/discourses.json").read_text())

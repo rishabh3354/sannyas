@@ -27,14 +27,15 @@ BOLD = "/home/warlord/.local/share/fonts/NotoSans-Bold.ttf"
 REG = "/home/warlord/.local/share/fonts/NotoSans-Regular.ttf"
 
 # Headline, supporting line, source capture, and the two gradient stops.
-# Colours stay in the app's violet family and step around it, so the five
-# cards read as one set rather than five unrelated adverts.
+# Colours are a graded saffron family matching the launcher artwork, running
+# gold -> orange -> terracotta -> rust, so the five cards read as one set
+# while still being told apart in the store's filmstrip.
 PANELS = [
-    ("351 series.",      "Osho's discourses, in Hindi and English",  "01-home.png",   "#6D4DF6", "#3B1E9E"),
-    ("Listen offline.",  "Download a talk or a whole series",        "02-series.png", "#1E7F8C", "#0C3E52"),
-    ("Sleep timer.",     "Stops at the end of the talk",             "03-player.png", "#B24C7A", "#5E1F46"),
-    ("Browse by theme.", "Zen, Buddha, Sufism, Tao and 50 more",     "04-browse.png", "#C2762B", "#6A3412"),
-    ("No ads. No account.", "Nothing about you is collected",        "05-settings.png", "#4B3BA8", "#1C1340"),
+    ("351 series.",         "Osho's discourses, in Hindi and English", "01-home.png",     "#E8920E", "#8A4A02"),
+    ("Listen offline.",     "Download a talk or a whole series",       "02-series.png",   "#D96A14", "#73300A"),
+    ("Sleep timer.",        "Stops at the end of the talk",            "03-player.png",   "#C44A22", "#5E1C0E"),
+    ("Browse by theme.",    "Zen, Buddha, Sufism, Tao and 50 more",    "04-browse.png",   "#B8701A", "#5C3208"),
+    ("No ads. No account.", "Nothing about you is collected",          "05-settings.png", "#9E4418", "#47180A"),
 ]
 
 
