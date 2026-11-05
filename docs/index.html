@@ -83,6 +83,12 @@
   .cta{display:inline-block;background:var(--accent);color:#fff;text-decoration:none;font-weight:600;
        padding:.9rem 2rem;border-radius:999px;font-size:1.05rem}
   .cta:hover{filter:brightness(1.1)}
+  /* Two routes to the same app: Play for most people, the APK for anyone who
+     cannot or would rather not use Play. The APK button is outlined so it
+     reads as the secondary of the pair rather than competing with it. */
+  .cta-play{background:#01875F}
+  .cta-alt{background:transparent;border:2px solid var(--accent);color:var(--accent);margin-left:.6rem}
+  @media (max-width:520px){.cta{display:block;margin:.5rem auto;max-width:18rem}.cta-alt{margin-left:auto}}
   .sub{color:var(--muted);font-size:.9rem;margin-top:.75rem}
   h2{font-size:1.45rem;letter-spacing:-.01em;margin:3.25rem 0 1rem}
   h3{font-size:1.05rem;margin:1.75rem 0 .35rem}
@@ -112,8 +118,9 @@
   <img class="banner" src="img/banner.png" alt="Sannyas — an Android app for listening to Osho's recorded discourses">
   <h1>Listen to Osho's discourses on Android</h1>
   <p class="tag">Free. Offline. In Hindi and English.<br>No account, no ads, no tracking.</p>
-  <a class="cta" href="https://gitlab.com/warlordsoftwares/sannyas/-/releases">Download the app</a>
-  <p class="sub">Free APK · 4.4&nbsp;MB · Android 7.0 and up</p>
+  <a class="cta cta-play" href="https://play.google.com/store/apps/details?id=com.sannyas.player">Get it on Google Play</a>
+  <a class="cta cta-alt" href="https://gitlab.com/warlordsoftwares/sannyas/-/releases">Download the APK</a>
+  <p class="sub">Free · Android 7.0 and up · no account, no ads</p>
 </header>
 
 <div class="stats">

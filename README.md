@@ -8,6 +8,7 @@
 
 <br>
 
+[![Get it on Google Play](https://img.shields.io/badge/Google%20Play-Download-414141?style=for-the-badge&logo=googleplay&logoColor=white)](https://play.google.com/store/apps/details?id=com.sannyas.player)
 [![Download APK](https://img.shields.io/gitlab/v/tag/warlordsoftwares%2Fsannyas?style=for-the-badge&label=Download%20APK&color=6C4DF6)](https://gitlab.com/warlordsoftwares/sannyas/-/releases)
 [![Website](https://img.shields.io/badge/Website-sannyas-1f1f2e?style=for-the-badge)](https://warlordsoftwares.gitlab.io/sannyas/)
 
