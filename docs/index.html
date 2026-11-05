@@ -217,7 +217,7 @@
 
 <footer>
   <p>
-    <a href="https://gitlab.com/warlordsoftwares/sannyas">Source on GitLab</a> ·
+    <a id="source-link" href="https://gitlab.com/warlordsoftwares/sannyas">Source</a> ·
     <a href="privacy-policy.html">Privacy</a> ·
     <a href="https://warlordsoftwares.com">Rishabh Bhardwaj</a>
   </p>
@@ -230,5 +230,25 @@
 </footer>
 
 </div>
+
+<script>
+// This page is published twice: GitLab Pages (canonical) and GitHub Pages (a
+// mirror of the same repo). Both build from this one file, so a hardcoded
+// release link would send one site's visitors to the other's host. Rewrite
+// the APK links to whichever forge is serving the page.
+//
+// Without JS the GitLab links in the markup still work everywhere, so this
+// only ever improves the destination, never breaks it.
+(function () {
+  if (!location.hostname.endsWith('github.io')) return;
+  var GITLAB = 'https://gitlab.com/warlordsoftwares/sannyas/-/releases';
+  var GITHUB = 'https://github.com/rishabh3354/sannyas/releases';
+  document.querySelectorAll('a[href^="' + GITLAB + '"]').forEach(function (a) {
+    a.href = a.href.replace(GITLAB, GITHUB);
+  });
+  var src = document.getElementById('source-link');
+  if (src) src.href = 'https://github.com/rishabh3354/sannyas';
+})();
+</script>
 </body>
 </html>
