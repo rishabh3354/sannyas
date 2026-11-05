@@ -56,8 +56,10 @@ class MainActivity : ComponentActivity() {
         splash.setKeepOnScreenCondition { !viewModel.isReady }
 
         handlePlayFromSearch(intent)
+        // enableEdgeToEdge() already clears decor fitting and applies the
+        // transparent system-bar styling; calling setDecorFitsSystemWindows
+        // afterwards only repeated it.
         enableEdgeToEdge()
-        WindowCompat.setDecorFitsSystemWindows(window, false)
 
         setContent {
             val settings by viewModel.settingsState.collectAsStateWithLifecycle()
@@ -73,8 +75,10 @@ class MainActivity : ComponentActivity() {
                 isAppearanceLightStatusBars = !dark
                 isAppearanceLightNavigationBars = !dark
             }
-            window.navigationBarColor = android.graphics.Color.TRANSPARENT
-            window.statusBarColor = android.graphics.Color.TRANSPARENT
+            // statusBarColor and navigationBarColor used to be set transparent
+            // here. Both are deprecated and are no-ops from Android 15, and
+            // Play flags them on the release; enableEdgeToEdge() is what
+            // actually makes the bars transparent now.
 
             // Collected with a lifecycle, so a talk that ends while the phone
             // is in a pocket asks at the next moment the app is actually on
