@@ -2,22 +2,20 @@
 """
 Renders the 1024x500 Play Console feature graphic.
 
-Reads the gradient stops out of the real launcher background vector and redraws
-the launcher mark, so the store banner cannot drift from the icon the way a
-hand-made asset would. Catalog figures are counted from discourses.json for the
-same reason — quoting a number the app does not actually ship is the kind of
-thing store reviewers check.
+Shows the launcher artwork itself, so the banner and the app icon beside it on
+the listing are the same mark. Catalog figures are counted from discourses.json
+rather than typed in — quoting a number the app does not actually ship is the
+kind of thing store reviewers check.
 
 Play crops this asset on some surfaces and overlays a play button on others, so
 nothing load-bearing sits in the outer eighth or dead centre.
 
-Drawn at 3x and downsampled: Pillow has no round line caps, so the enso's ends
-are stamped as circles, and that seam only disappears with supersampling.
+Drawn at 3x and downsampled, which keeps the type crisp and the disc's edge
+smooth at the final size.
 """
 import json
-import re
 from pathlib import Path
-from PIL import Image, ImageDraw, ImageFont
+from PIL import Image, ImageDraw, ImageFilter, ImageFont
 
 ROOT = Path(__file__).resolve().parent.parent
 OUT = ROOT / "branding/play-feature-graphic-1024x500.png"
@@ -68,28 +66,29 @@ for i in range(diag):
         col = stops[-1][1]
     d.line([(i, 0), (0, i)], fill=col, width=2)
 
-# --- the mark: open enso + play triangle, mirroring ic_launcher_foreground ----
-cx, cy, r, sw = 232 * S, 250 * S, 96 * S, 18 * S
-# Gap spans 40deg..80deg, matching the vector. Pillow measures clockwise from
-# 3 o'clock with y growing downward, so the vector's angles negate.
-d.arc([cx - r, cy - r, cx + r, cy + r], start=-40, end=-80 + 360, fill="white", width=sw)
-# Pillow strokes an arc *inward* from the bounding box, so the drawn band runs
-# from r-sw to r and its centreline sits at r-sw/2. Stamping the round caps at r
-# instead leaves them hanging off the end with a notch on the inner edge.
-cap_r = r - sw / 2
-for ang in (-40, -80):
-    import math
-    ex = cx + cap_r * math.cos(math.radians(ang))
-    ey = cy + cap_r * math.sin(math.radians(ang))
-    d.ellipse([ex - sw / 2, ey - sw / 2, ex + sw / 2, ey + sw / 2], fill="white")
+# --- the mark: the launcher artwork itself ------------------------------------
+# This used to redraw the enso so the banner tracked the icon. The launcher is
+# illustrated artwork now, so the banner shows that artwork instead — two
+# different marks on one listing page reads as two different apps.
+mark_d = 300 * S
+cx, cy = 208 * S, 250 * S
+half = mark_d // 2
 
-tri = [(cx - 34 * S, cy - 44 * S), (cx + 52 * S, cy), (cx - 34 * S, cy + 44 * S)]
-d.polygon(tri, fill="white")
-# The vector softens these corners with a stroke line join. Stamping circles on
-# the vertices does not reproduce that — a circle centred on a sharp point juts
-# out past both edges and reads as a knob. Stroking the perimeter with a round
-# joint is what the vector actually does.
-d.line(tri + [tri[0]], fill="white", width=10 * S, joint="curve")
+# A soft shadow under the disc. The artwork's own background is a saffron close
+# to the banner's, so without one the circle's edge dissolves and the mark
+# looks like a stain rather than a badge.
+shadow = Image.new("RGBA", img.size, (0, 0, 0, 0))
+ImageDraw.Draw(shadow).ellipse([cx - half, cy - half, cx + half, cy + half],
+                               fill=(54, 18, 0, 165))
+shadow = shadow.filter(ImageFilter.GaussianBlur(13 * S))
+img = Image.alpha_composite(img.convert("RGBA"), shadow).convert("RGB")
+d = ImageDraw.Draw(img)
+
+art = Image.open(ROOT / "branding/icon-source.png").convert("RGB")
+art = art.resize((mark_d, mark_d), Image.LANCZOS)
+disc = Image.new("L", (mark_d, mark_d), 0)
+ImageDraw.Draw(disc).ellipse([0, 0, mark_d - 1, mark_d - 1], fill=255)
+img.paste(art, (cx - half, cy - half), disc)
 
 # --- type ---------------------------------------------------------------------
 name = ImageFont.truetype(FONT_BOLD, 92 * S)
@@ -99,11 +98,11 @@ stat = ImageFont.truetype(FONT_REG, 27 * S)
 x = 384 * S
 d.text((x, 170 * S), "Sannyas", font=name, fill="white", anchor="ls")
 d.text((x, 224 * S), "Osho's recorded discourses", font=lede,
-       fill=(226, 220, 255), anchor="ls")
+       fill=(255, 243, 224), anchor="ls")
 d.text((x, 282 * S), f"{series} series  ·  {talks:,} talks  ·  {hours:,} hours",
-       font=stat, fill=(198, 188, 240), anchor="ls")
+       font=stat, fill=(255, 231, 196), anchor="ls")
 d.text((x, 330 * S), "Stream or download  ·  No ads  ·  No account",
-       font=stat, fill=(198, 188, 240), anchor="ls")
+       font=stat, fill=(255, 231, 196), anchor="ls")
 
 img.resize((W, H), Image.LANCZOS).save(OUT)
 print(f"wrote {OUT.relative_to(ROOT)} — {series} series, {talks} talks, {hours} hours")
