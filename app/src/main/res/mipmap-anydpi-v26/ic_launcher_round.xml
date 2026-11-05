@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  The illustrated mark. The foreground is raster artwork composed on the 108dp
+  canvas by branding/render_launcher_icon.py, already inset so a round or
+  squircle mask cannot cut the face.
+
+  The background is a flat saffron matching the artwork's own edge, so the two
+  layers meet invisibly whatever shape the launcher masks to, and the parallax
+  some launchers apply never reveals a seam.
+
+  The monochrome layer stays the enso. Themed icons are a single-colour
+  silhouette, which illustrated artwork cannot survive — a flattened sage reads
+  as a smudge. The enso is the app's other mark and holds up at one colour.
+-->
+<adaptive-icon xmlns:android="http://schemas.android.com/apk/res/android">
+    <background android:drawable="@color/ic_launcher_bg" />
+    <foreground android:drawable="@mipmap/ic_launcher_fg" />
+    <monochrome android:drawable="@drawable/ic_launcher_foreground" />
+</adaptive-icon>
