@@ -12,12 +12,14 @@ import androidx.compose.animation.slideOutHorizontally
 import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
+import androidx.navigation.NavDeepLink
 import androidx.navigation.NavGraphBuilder
 import androidx.navigation.NavHostController
 import androidx.navigation.NavType
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.navArgument
+import androidx.navigation.navDeepLink
 import com.sannyas.player.ui.browse.BrowseScreen
 import com.sannyas.player.ui.detail.DiscourseDetailScreen
 import com.sannyas.player.ui.downloads.DownloadsScreen
@@ -90,7 +92,17 @@ fun OshoNavHost(
             SettingsScreen(contentPadding = contentPadding)
         }
 
-        detailComposable(Routes.DISCOURSE, Routes.DISCOURSE_ARG) {
+        // The manifest advertises sannyas://discourse to Assistant and Android
+        // Auto, and MediaTree hands out ids in exactly this shape. Without a
+        // matching deep link here the intent resolved, opened the app and then
+        // did nothing — a declared entry point that silently went nowhere.
+        detailComposable(
+            Routes.DISCOURSE,
+            Routes.DISCOURSE_ARG,
+            deepLinks = listOf(
+                navDeepLink { uriPattern = "sannyas://discourse/{${Routes.DISCOURSE_ARG}}" },
+            ),
+        ) {
             DiscourseDetailScreen(
                 contentPadding = contentPadding,
                 onBack = navController::popBackStack,
@@ -172,6 +184,7 @@ fun OshoNavHost(
 private fun NavGraphBuilder.detailComposable(
     route: String,
     argument: String?,
+    deepLinks: List<NavDeepLink> = emptyList(),
     content: @Composable () -> Unit,
 ) {
     composable(
@@ -179,6 +192,7 @@ private fun NavGraphBuilder.detailComposable(
         arguments = argument?.let {
             listOf(navArgument(it) { type = NavType.StringType })
         } ?: emptyList(),
+        deepLinks = deepLinks,
         enterTransition = {
             slideInHorizontally(SlideSpec) { it / 6 } + fadeIn(FadeSpec)
         },

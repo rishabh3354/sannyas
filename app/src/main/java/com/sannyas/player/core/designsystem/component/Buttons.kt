@@ -38,6 +38,8 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.semantics.Role
+import androidx.compose.ui.semantics.contentDescription
+import androidx.compose.ui.semantics.semantics
 import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
 import com.sannyas.player.R
@@ -140,6 +142,9 @@ fun OshoIconButton(
     val interaction = rememberInteraction()
     val activeTint = if (active) MaterialTheme.colorScheme.primary else tint
     val resolvedTint = if (enabled) activeTint else tint.copy(alpha = 0.35f)
+    // Aliased because `contentDescription` inside the semantics lambda resolves
+    // to the property being set, not to this parameter.
+    val description = contentDescription
 
     Box(
         modifier = modifier
@@ -153,12 +158,19 @@ fun OshoIconButton(
                 role = Role.Button,
                 onClickLabel = contentDescription,
                 onClick = onClick,
-            ),
+            )
+            // The label belongs on the node that is actually clickable. With it
+            // only on the Icon, accessibility tooling sees an unlabelled button
+            // with a described child, and a Play review flagged exactly that
+            // shape on the back arrow as an unresponsive control.
+            .semantics { this.contentDescription = description },
         contentAlignment = Alignment.Center,
     ) {
         Icon(
             imageVector = icon,
-            contentDescription = contentDescription,
+            // Described by the parent; repeating it here makes TalkBack
+            // announce the same words twice.
+            contentDescription = null,
             tint = resolvedTint,
             modifier = Modifier.size(iconSize),
         )
