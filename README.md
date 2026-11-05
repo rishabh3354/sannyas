@@ -20,16 +20,11 @@
 
 <table>
   <tr>
-    <td><img src="branding/screenshots/01-home-thumb.png" width="200" alt="Home"></td>
-    <td><img src="branding/screenshots/02-series-thumb.png" width="200" alt="Series"></td>
-    <td><img src="branding/screenshots/03-player-thumb.png" width="200" alt="Player"></td>
-    <td><img src="branding/screenshots/04-browse-thumb.png" width="200" alt="Browse"></td>
-  </tr>
-  <tr align="center">
-    <td><sub>Home</sub></td>
-    <td><sub>Series</sub></td>
-    <td><sub>Player</sub></td>
-    <td><sub>Browse</sub></td>
+    <td><img src="branding/store-panels/01-351-series-thumb.png" width="170" alt="351 discourse series in Hindi and English"></td>
+    <td><img src="branding/store-panels/02-listen-offline-thumb.png" width="170" alt="Download a talk or a whole series for offline listening"></td>
+    <td><img src="branding/store-panels/03-sleep-timer-thumb.png" width="170" alt="Sleep timer stops at the end of the talk"></td>
+    <td><img src="branding/store-panels/04-browse-by-theme-thumb.png" width="170" alt="Browse by theme across 55 categories"></td>
+    <td><img src="branding/store-panels/05-no-ads-thumb.png" width="170" alt="No ads, no account, nothing collected"></td>
   </tr>
 </table>
 
